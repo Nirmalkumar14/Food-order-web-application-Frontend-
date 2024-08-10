@@ -18,9 +18,11 @@ const{getTotalCartAmount}=useContext(StoreContext)
      </Link >
       <ul className="navbar-menu">
         <Link to='/' onClick={()=>setMenu("home")}  className={menu==="home"?"active":""}>home</Link>
-        <a href='#explore-menu'  onClick={()=>setMenu("menu")} className={menu==="menu"       ?"active":"" }>menu</a>
+        <a href='#explore-menu'  onClick={()=>setMenu("menu")} className={menu==="menu"?"active":"" }>menu</a>
         <a href='#' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app" ?"active":"" }>mobile-app</a>
         <a href='#footer' onClick={()=>setMenu("contact")} className={menu==="contact"    ?"active":"" }>contact</a>
+        {/* <Link to='/Footer'> contact
+        </Link> */}
       </ul>
       <div className='navbar-rigth'>
         <img src={assets.search_icon}/>
